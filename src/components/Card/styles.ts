@@ -33,14 +33,13 @@ const wrapperColorModifier = {
     background: ${theme.colors.red};
   `,
   linear: (theme: DefaultTheme) => css`
-  color: ${theme.colors.white};
-  background: ${theme.colors.linear.secondary};
+    color: ${theme.colors.white};
+    background: ${theme.colors.linear.secondary};
   `,
   normal: (theme: DefaultTheme) => css`
-  color: ${theme.colors.normal};
-  background: ${theme.colors.normal};
-  
-`
+    color: ${theme.colors.normal};
+    background: ${theme.colors.normal};
+  `
 }
 
 export const Wrapper = styled.a<Pick<CardProps, 'color' | 'isDisabled'>>`
@@ -84,13 +83,13 @@ const imageColorModifier = {
     background: ${theme.colors.white};
   `,
   linear: (theme: DefaultTheme) => css`
-  color: ${theme.colors.white};
-  background: ${theme.colors.linear.first};
+    color: ${theme.colors.white};
+    background: ${theme.colors.linear.first};
   `,
   normal: (theme: DefaultTheme) => css`
-  color: ${theme.colors.normal};
-  background: ${theme.colors.normal};
-`
+    color: ${theme.colors.normal};
+    background: ${theme.colors.normal};
+  `
 }
 
 export const Image = styled.div<Pick<CardProps, 'color'>>`

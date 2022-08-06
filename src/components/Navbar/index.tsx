@@ -13,12 +13,11 @@ import { RouteProps } from 'types/routes'
 import { CONST_ROUTES } from 'constants/routes'
 
 export const Navbar = () => {
-
   const routes = useRouter()
   const { push } = routes
 
   const handleClick = (route: RouteProps) => {
-      push(`${route.path}`)
+    push(`${route.path}`)
   }
 
   return (
@@ -45,7 +44,12 @@ export const Navbar = () => {
           <Notify />
         </div>
         <div>
-          <Button color="linear" size="medium" isBold={false}  onClick={() => handleClick(CONST_ROUTES.Perfil)}>
+          <Button
+            color="linear"
+            size="medium"
+            isBold={false}
+            onClick={() => handleClick(CONST_ROUTES.Perfil)}
+          >
             <span>PERFIL</span>
           </Button>
         </div>
